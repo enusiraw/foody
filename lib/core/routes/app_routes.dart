@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import '../../screens/home_screen.dart';
+import '../../screens/main_scaffold.dart';
 import '../../screens/food_detail_screen.dart';
-import '../../screens/cart_screen.dart';
 import '../../screens/order_confirmation_screen.dart';
 import '../../models/food_item.dart';
 import '../../models/order.dart';
@@ -23,7 +22,7 @@ class AppRoutes {
     switch (settings.name) {
       case home:
         return MaterialPageRoute(
-          builder: (_) => const HomeScreen(),
+          builder: (_) => const MainScaffold(initialIndex: 0),
           settings: settings,
         );
 
@@ -39,7 +38,7 @@ class AppRoutes {
 
       case cart:
         return MaterialPageRoute(
-          builder: (_) => const CartScreen(),
+          builder: (_) => const MainScaffold(initialIndex: 2),
           settings: settings,
         );
 
@@ -100,7 +99,13 @@ class AppRoutes {
 
   /// Navigate to cart screen
   static Future<void> navigateToCart(BuildContext context) {
-    return Navigator.pushNamed(context, cart);
+    return Navigator.pushAndRemoveUntil(
+      context,
+      MaterialPageRoute(
+        builder: (_) => const MainScaffold(initialIndex: 2),
+      ),
+      (route) => false,
+    );
   }
 
   /// Navigate to order confirmation screen
