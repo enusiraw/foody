@@ -56,7 +56,7 @@ test/
 ## 📱 Screenshots
 
 ### Home Screen
-![Home](sassets/creenshots/home.png)
+![Home](assets/creenshots/home.png)
 
 ### menu Screen
 ![Cart](assets/screenshots/menu.png)
