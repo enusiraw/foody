@@ -2,7 +2,7 @@
 
 A modern food ordering Flutter application built with BLoC architecture, featuring a complete ordering workflow from browsing menu to order confirmation.
 
-## ✨ Features
+##  Features
 
 - **Browse Menu**: Explore food items across multiple categories (Burgers, Pizza, Sushi, Desserts, Drinks)
 - **Search & Filter**: Search for food items and filter by categories
@@ -12,7 +12,7 @@ A modern food ordering Flutter application built with BLoC architecture, featuri
 - **Error Handling**: Comprehensive error handling throughout the workflow
 - **Beautiful UI**: Modern, aesthetically pleasing design with smooth animations
 
-## 🏗️ Architecture
+## Architecture
 
 This app follows **SOLID principles** and uses **BLoC (Business Logic Component)** pattern for state management:
 
@@ -53,7 +53,18 @@ test/
 - **Interface Segregation**: Repositories expose only necessary methods
 - **Dependency Inversion**: BLoCs depend on repository abstractions, not concrete implementations
 
-## 🚀 Getting Started
+## 📱 Screenshots
+
+### Home Screen
+![Home](sassets/creenshots/home.png)
+
+### menu Screen
+![Cart](assets/screenshots/menu.png)
+
+### Order Screen
+![Order](assets/screenshots/food-detail.png)
+
+## Getting Started
 
 ### Prerequisites
 
@@ -92,14 +103,14 @@ flutter test --coverage
 flutter test test/bloc/cart_bloc_test.dart
 ```
 
-## 📱 Workflow
+## Workflow
 
 1. **Home Screen**: Browse food items, search, and filter by category
 2. **Food Detail**: View item details, select quantity, add special instructions
 3. **Cart**: Review items, update quantities, enter delivery address
 4. **Order Confirmation**: See order summary and confirmation details
 
-## 🧪 Testing
+## Testing
 
 The app includes comprehensive unit tests for all BLoCs:
 
@@ -107,7 +118,7 @@ The app includes comprehensive unit tests for all BLoCs:
 - **Food Menu BLoC Tests**: Load menu, filter, search functionality
 - **Order BLoC Tests**: Place order, validation, error handling
 
-## 🛠️ Dependencies
+## Dependencies
 
 ```yaml
 dependencies:
@@ -120,7 +131,7 @@ dev_dependencies:
   flutter_test: sdk: flutter
 ```
 
-## 🎨 Design Highlights
+## Design Highlights
 
 - **Color Scheme**: Orange-based theme for food/appetite appeal
 - **Typography**: Clear, readable fonts with proper hierarchy
@@ -129,7 +140,7 @@ dev_dependencies:
 - **Animations**: Smooth transitions between screens
 - **Icons**: Intuitive icons for better UX
 
-## 🔐 Error Handling
+## Error Handling
 
 The app handles various error scenarios:
 
@@ -139,7 +150,7 @@ The app handles various error scenarios:
 - **Network Errors**: Simulated network error handling (10% chance)
 - **Invalid Quantities**: Prevents invalid quantity updates
 
-## 📝 State Management
+## State Management
 
 ### BLoC Pattern Benefits
 
@@ -149,7 +160,7 @@ The app handles various error scenarios:
 - **Debugging**: Clear state transitions via BLoC observer
 - **Scalability**: Easy to add new features
 
-## 🚧 Future Enhancements
+## Future Enhancements
 
 - Real-time order tracking
 - Payment integration
@@ -160,10 +171,10 @@ The app handles various error scenarios:
 - Push notifications
 - Multiple delivery addresses
 
-## 📄 License
+##  License
 
-This project is created for educational purposes.
+This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
 
-## 👨‍💻 Development
+##  Development
 
 Built with ❤️ using Flutter and BLoC pattern, following best practices and SOLID principles.
