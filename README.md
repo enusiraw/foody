@@ -64,6 +64,9 @@ test/
 ### Order Screen
 ![Order](assets/screenshots/food-detail.png)
 
+### menu Screen
+![Order](assets/screenshots/menu.png)
+
 ## Getting Started
 
 ### Prerequisites
